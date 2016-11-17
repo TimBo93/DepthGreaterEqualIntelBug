@@ -9,48 +9,25 @@ On the Intel HD Graphics 4600 using Windows 10 and latest drivers (installed by 
 
 The repository contains a minimal example that shows the problem (source code an binaries). Execute the Tutorial2.exe on Windows 7 with Intel HD Graphics 4600 to reproduce the problem. The problem also occures with some other Intel HD Graphics on Windows 7 (for example Atom E3845). We could not observe the error on AMD or NVIDIA cards. 
 
+![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/BugVsExpected.jpg)
+
 
 ##Bug occures on
 
-
-System Used: (Manufacturer/Model)
-
-
-CPU SKU: i5
-
-
-GPU SKU: Intel HD Graphics 4600
-
-
-Processor Line: ?
-
-
-System BIOS Version: ?
+* System Used: (Manufacturer/Model)
+* CPU SKU: i5
+* GPU SKU: Intel HD Graphics 4600
+* Processor Line: ?
+* System BIOS Version: ?
+* CMOS settings: ?
+* Graphics Driver Version: 10.18.14.4414
+* GOP/VBIOS Version: ?
+* Operating System: Windows 7
+* OS Version: SP1 Version 6.1
+* API: Direct3D 11 Shader Model 5
+* Occurs on non-Intel GPUs?: No
 
 
-CMOS settings: ?
-
-
-Graphics Driver Version: 10.18.14.4414
-
-
-GOP/VBIOS Version: ?
-
-
-Operating System: Windows 7
-
-
-OS Version: SP1 Version 6.1
-
-
-API: Direct3D 11 Shader Model 5
-
-
-Occurs on non-Intel GPUs?: No
-
-
-
-![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/BugVsExpected.jpg)
 
 
 ## The example scene
