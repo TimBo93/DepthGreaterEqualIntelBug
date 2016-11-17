@@ -10,7 +10,7 @@ On the Intel HD Graphics 4600 using Windows 10 and latest drivers (installed by 
 The repository contains a minimal example that shows the problem (source code an binaries). Execute the Tutorial2.exe on Windows 7 with Intel HD Graphics 4600 to reproduce the problem. The problem also occures with some other Intel HD Graphics on Windows 7 (for example Atom E3845). We could not observe the error on AMD or NVIDIA cards. 
 
 
-__Bug occures on__
+##Bug occures on
 
 
 System Used: (Manufacturer/Model)
@@ -53,11 +53,12 @@ Occurs on non-Intel GPUs?: No
 ![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/BugVsExpected.jpg)
 
 
+## The example scene
+The depth buffer is cleared with z= 1.0. The z-test function is set to less (D3D11_COMPARISON_LESS). The vertices of the triangle in the example scene are at depth z=0.5 and the pixel shader changes this depth to z=0.7 (with output semantic DepthGreaterEqual).
+![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/Scene.jpg)
+
 
 The VS Graphical Debugger shows that the pixels are culled by the z test. 
 ![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/GraphicalDebugger.PNG)
 
-
-The depth buffer is cleared with z= 1.0. The z-test function is set to less (D3D11_COMPARISON_LESS). The vertices of the triangle in the example scene are at depth z=0.5 and the pixel shader changes this depth to z=0.7 (with output semantic DepthGreaterEqual).
-![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/Scene.jpg)
 
