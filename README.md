@@ -11,4 +11,4 @@ The repository contains a minimal example that shows the problem (source code an
 ![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/BugVsExpected.jpg)
 
 The VS Graphical Debugger shows that the pixels are culled by the z test. 
-![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/BugVsExpected.jpg)
+![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/GraphicalDebugger.PNG)
