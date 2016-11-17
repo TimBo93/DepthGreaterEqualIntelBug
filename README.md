@@ -56,3 +56,8 @@ Occurs on non-Intel GPUs?: No
 
 The VS Graphical Debugger shows that the pixels are culled by the z test. 
 ![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/GraphicalDebugger.PNG)
+
+
+The depth buffer is cleared with z= 1.0. The vertices of the triangle in the example scene are at depth z=0.5 and the pixel shader changes this depth to z=0.7 (with output semantic DepthGreaterEqual).
+![alt tag](https://github.com/TimBo93/DepthGreaterEqualIntelBug/raw/master/Images/Scene.jpg)
+
