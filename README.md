@@ -1,6 +1,8 @@
 # DepthGreaterEqualIntelBug
 A minimal example that shows problems with the SV_DepthGreaterEqual Semantic and Intel HD Graphics 4600 with Windows 7 Drivers.
 
+You can find the bug report at intel forum : https://software.intel.com/en-us/forums/graphics-driver-bug-reporting/topic/703401
+
 There seem to be serious problems with the Intel HD Graphics 4600 on Windows 7 when using the SV_DepthGreaterEqual semantics (or SV_DepthLessEqual). This semantic can be used to allow the hardware to use early z testing in case the pixel shader has to write the depth value. Using it on the pixel shader output it guarantees that the depth value writte by the pixel shader will be greater or equal to the value from the previous stage.
 
 
